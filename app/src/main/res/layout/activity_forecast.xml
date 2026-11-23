@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        app:navigationIcon="@drawable/ic_back"
+        app:navigationContentDescription="@string/navigate_back"
+        app:titleTextColor="@color/on_primary" />
+
+    <TextView
+        android:id="@+id/cityName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_padding"
+        android:layout_marginTop="@dimen/screen_padding"
+        android:layout_marginEnd="@dimen/screen_padding"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/city_name"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/currentTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_padding"
+        android:layout_marginTop="@dimen/card_margin"
+        android:layout_marginEnd="@dimen/screen_padding"
+        android:textColor="@color/primary"
+        android:textSize="@dimen/city_temp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/currentDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_padding"
+        android:layout_marginEnd="@dimen/screen_padding"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/body_text" />
+
+    <TextView
+        android:id="@+id/windText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_padding"
+        android:layout_marginEnd="@dimen/screen_padding"
+        android:layout_marginBottom="@dimen/card_margin"
+        android:textColor="@color/text_secondary"
+        android:textSize="@dimen/small_text" />
+
+    <TextView
+        android:id="@+id/errorText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/screen_padding"
+        android:textColor="@color/error"
+        android:textSize="@dimen/body_text"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dayList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:padding="@dimen/card_margin" />
+
+</LinearLayout>

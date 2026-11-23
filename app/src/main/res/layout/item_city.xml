@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/card_margin"
+    app:cardBackgroundColor="@color/card"
+    app:cardCornerRadius="@dimen/card_radius">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/card_padding">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cityName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/body_text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cityDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/small_text" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/cityTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/screen_padding"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/city_temp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/deleteButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="@dimen/card_margin"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/delete_city"
+            android:src="@drawable/ic_delete" />
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
