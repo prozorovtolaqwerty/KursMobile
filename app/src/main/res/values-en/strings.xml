@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Weather forecast</string>
+    <string name="search_hint">City name</string>
+    <string name="empty_cities">The list is empty. Search for a city and add it.</string>
+    <string name="search_empty">City not found</string>
+    <string name="error_network">No network connection</string>
+    <string name="error_api_key">Add an Api-Ninjas key to local.properties</string>
+    <string name="error_duplicate">This city is already in the list</string>
+    <string name="error_unknown">Could not load data</string>
+    <string name="error_not_found">City was not found in the list</string>
+    <string name="delete_city">Remove city</string>
+    <string name="navigate_back">Back</string>
+    <string name="wind">Wind %1$.0f m/s</string>
+    <string name="temperature">%1$.0f°</string>
+    <string name="temperature_unknown">—</string>
+    <string name="temp_range">%1$.0f° / %2$.0f°</string>
+    <string name="precipitation">Precipitation %1$d%%</string>
+    <string name="today">Today</string>
+    <string name="weather_clear">Clear</string>
+    <string name="weather_mainly_clear">Mainly clear</string>
+    <string name="weather_partly_cloudy">Partly cloudy</string>
+    <string name="weather_cloudy">Overcast</string>
+    <string name="weather_fog">Fog</string>
+    <string name="weather_drizzle">Drizzle</string>
+    <string name="weather_rain">Rain</string>
+    <string name="weather_snow">Snow</string>
+    <string name="weather_thunder">Thunderstorm</string>
+    <string name="weather_unknown">No description</string>
+</resources>

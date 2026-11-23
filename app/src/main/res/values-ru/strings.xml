@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Прогноз погоды</string>
+    <string name="search_hint">Название города</string>
+    <string name="empty_cities">Список пуст. Найдите город и добавьте его.</string>
+    <string name="search_empty">Город не найден</string>
+    <string name="error_network">Нет соединения с сетью</string>
+    <string name="error_api_key">Нужен ключ Api-Ninjas в local.properties</string>
+    <string name="error_duplicate">Этот город уже есть в списке</string>
+    <string name="error_unknown">Не удалось загрузить данные</string>
+    <string name="error_not_found">Город не найден в списке</string>
+    <string name="delete_city">Удалить город</string>
+    <string name="navigate_back">Назад</string>
+    <string name="wind">Ветер %1$.0f м/с</string>
+    <string name="temperature">%1$.0f°</string>
+    <string name="temperature_unknown">—</string>
+    <string name="temp_range">%1$.0f° / %2$.0f°</string>
+    <string name="precipitation">Осадки %1$d%%</string>
+    <string name="today">Сегодня</string>
+    <string name="weather_clear">Ясно</string>
+    <string name="weather_mainly_clear">Малооблачно</string>
+    <string name="weather_partly_cloudy">Переменная облачность</string>
+    <string name="weather_cloudy">Пасмурно</string>
+    <string name="weather_fog">Туман</string>
+    <string name="weather_drizzle">Морось</string>
+    <string name="weather_rain">Дождь</string>
+    <string name="weather_snow">Снег</string>
+    <string name="weather_thunder">Гроза</string>
+    <string name="weather_unknown">Без описания</string>
+</resources>
